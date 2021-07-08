@@ -1,10 +1,9 @@
 version: 0.2
-'''
-env:
-  parameter-store:
-    IGN: /tanumoy/var
 
-'''
+#env:
+        #  parameter-store:
+          #    IGN: /tanumoy/var
+
 phases:
   install:
     commands:
