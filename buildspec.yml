@@ -10,14 +10,14 @@ phases:
       - echo "This is Installation Phase"
   pre_build:      
     commands:
-      - echo "$IGN"
+      - echo $IGN
       - echo "The Pre-Build is running good"
   build:
     commands:
-      - echo "$IGN"
+      - echo $IGN
       - echo "The build phase is runnig good"
   post_build:
     commands:
-      - echo "$IGN"
+      - echo $IGN
       - echo "This is Post Build Phase"
       - echo "End of CodeBuild"
