@@ -1,9 +1,5 @@
 version: 0.2
 
-env:
-  parameter-store:
-    IGN: "/CodeBuild/td"
-
 phases:
   install:
     commands:
