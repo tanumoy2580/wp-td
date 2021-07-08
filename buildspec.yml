@@ -1,8 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    IGL: "KillRTD786"
   parameter-store:
     IGN: "/CodeBuild/td"
 
@@ -10,10 +7,11 @@ phases:
   install:
     commands:
       - echo "This is Installation Phase"
+      - printenv
   pre_build:      
     commands:
       - echo "$IGN"
-      - echo "$IGL"
+      - printenv
       - echo "The Pre-Build is running good"
   build:
     commands:
