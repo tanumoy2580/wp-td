@@ -4,16 +4,17 @@ phases:
   install:
     commands:
       - echo "This is Installation Phase"
-      - echo "$IGN"
+      - echo "$DB_PASS"
   pre_build:      
     commands:
-      - echo "$IGN"
+      - echo "$DB_PASS"
       - echo "The Pre-Build is running good"
+      - printenv
   build:
     commands:
-      - echo $IGN
+      - echo $DB_PASS
       - echo "The build phase is runnig good"
   post_build:
     commands:
-      - echo $IGN
+      - echo $DB_PASS
       - echo "This is Post Build Phase"
