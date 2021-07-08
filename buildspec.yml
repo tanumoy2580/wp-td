@@ -9,7 +9,7 @@ phases:
     commands:
       - echo "$DB_PASS"
       - echo "The Pre-Build is running good"
-      - printenv
+    
   build:
     commands:
       - echo $DB_PASS
