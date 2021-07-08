@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   parameter-store:
-    IGN: /tanumoy/var
+    IGN: "/tanumoy/var"
 
 phases:
   install:
@@ -10,15 +10,13 @@ phases:
       - echo "This is Installation Phase"
   pre_build:      
     commands:
-      - IGL=$IGN
-      - echo "$IGL"
+      - echo "$IGN"
       - echo "The Pre-Build is running good"
   build:
     commands:
-      - echo $IGL
+      - echo $IGN
       - echo "The build phase is runnig good"
   post_build:
     commands:
       - echo $IGN
       - echo "This is Post Build Phase"
-      - echo "End of CodeBuild"
