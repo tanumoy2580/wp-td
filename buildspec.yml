@@ -8,16 +8,14 @@ phases:
   install:
     commands:
       - echo "This is Installation Phase"
-      - printenv
+      - echo "$IGN"
   pre_build:      
     commands:
       - echo "$IGN"
-      - printenv
       - echo "The Pre-Build is running good"
   build:
     commands:
       - echo $IGN
-      - echo $IGL
       - echo "The build phase is runnig good"
   post_build:
     commands:
