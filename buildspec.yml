@@ -10,12 +10,12 @@ phases:
       - echo "This is Installation Phase"
   pre_build:      
     commands:
-      - IGN="My IGN is KillR"
-      - echo "$IGN"
+      - IGL=$IGN
+      - echo "$IGL"
       - echo "The Pre-Build is running good"
   build:
     commands:
-      - echo $IGN
+      - echo $IGL
       - echo "The build phase is runnig good"
   post_build:
     commands:
