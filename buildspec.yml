@@ -1,16 +1,21 @@
 version: 0.2
 
+env:
+  parameter-store:
+    IGN: /tanumoy/var
+
+
+
 phases:
   install:
     commands:
       - echo "This is Installation Phase"
   pre_build:      
     commands:
-      - echo "This is the Pre-Build Phase"
       - echo "The Pre-Build is running good"
   build:
     commands:
-      - echo "This is the Build Phase..."
+      - echo $IGN 
       - echo "The build phase is runnig good"
   post_build:
     commands:
