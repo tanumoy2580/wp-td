@@ -1,18 +1,25 @@
 version: 0.2
 
+env:
+  parameter-store:
+    DB_NAME: /tanumoy/td
+
 phases:
   install:
     commands:
       - echo "This is Installation Phase"
-      - echo "$DB_PASS"
+      - echo "$DB_NAME"
+      - printenv
   pre_build:      
     commands:
-      - echo "$DB_PASS"
+      - echo "$DB_NAME"
+      - printrnv
       - echo "The Pre-Build is running good"
     
   build:
     commands:
-      - echo $DB_PASS
+      - echo $DB_NAME
+      - printenv
       - echo "The build phase is runnig good"
   post_build:
     commands:
