@@ -13,7 +13,7 @@ phases:
   pre_build:      
     commands:
       - echo "$DB_NAME"
-      - printrnv
+      - printenv
       - echo "The Pre-Build is running good"
     
   build:
