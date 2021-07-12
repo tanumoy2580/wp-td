@@ -8,6 +8,9 @@ env:
            DB_HOST: "/Tanumoy/host"
 
 phases:
+    install:
+    runtime-versions:
+        php: 7.3
     build:
         commands:
             - sed -i 's/database_name_here/'$DB_NAME'/' wp-config.php
