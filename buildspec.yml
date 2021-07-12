@@ -2,10 +2,10 @@ version: 0.2
 
 env:
    parameter-store:
-           DB_NAME: "/Tanumoy/db_name"
-           DB_USER: "/Tanumoy/uname"
-           DB_PASSWORD: "/Tanumoy/pass"
-           DB_HOST: "/Tanumoy/host"
+           DB_NAME: /Tanumoy/db_name
+           DB_USER: /Tanumoy/uname
+           DB_PASSWORD: /Tanumoy/pass
+           DB_HOST: /Tanumoy/host
 
 phases:
     install:
