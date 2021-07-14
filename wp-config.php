@@ -54,7 +54,9 @@ define( 'AUTH_SALT',        'put your unique phrase here' );
 define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
 define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
-
+define('WP_HOME','https://td.squareops.xyz');
+define('WP_SITEURL','https://td.squareops.xyz');
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)   $_SERVER['HTTPS']='on';
 /**#@-*/
 
 /**
@@ -81,6 +83,7 @@ define( 'WP_DEBUG', false );
 define( 'FS_METHOD', 'direct');
 
 /* That's all, stop editing! Happy publishing. */
+
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
